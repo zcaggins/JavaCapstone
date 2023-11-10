@@ -1,0 +1,89 @@
+body{
+    background-color: lightgrey;
+}
+
+h1 , h2 , h3{
+    color: black;
+}
+
+.word-display {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.word-display .letter {
+    font-size: 3rem;
+    width: 28px;
+    margin-bottom: 40px;
+    /* border-bottom: 3px solid black; */
+    padding: 4px;
+    text-transform: capitalize;
+    font-weight: 200px;
+    text-align: center;
+}
+
+.word-display .letter.guessed {
+    /* border-color: transparent; */
+    margin: -20px 0 5px;
+}
+
+.game-box .guesses-text b {
+    color: red;
+}
+
+.game-box .keyboard {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    transition: opacity 0.4s ease;
+}
+
+.game-modal.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.keyboard button {
+    color: whitesmoke;
+    font-size: 1.5rem;
+    width: calc(100% / 9 - 5px);
+    background: black;
+    border-radius: 5px;
+    text-transform: capitalize;
+    outline: none;
+    padding: 5px;
+}
+
+.keyboard button[disabled] {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.keyboard button:hover {
+    background: gray;
+}
+
+.modal{
+    text-align: center;
+
+}
+
