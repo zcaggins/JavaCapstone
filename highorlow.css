@@ -1,0 +1,28 @@
+body {
+    background-color: #e3f0ff ;
+}
+
+#container {
+    background-color: #fffef9;
+    border: 250px solid  #d2e7ff;
+    height: 275px;
+    width: 750px;
+    margin: auto;
+    text-align: center;
+    padding: 80px 0;
+}
+
+#input {
+    width: 100px;
+    margin: 25px auto;
+}
+
+#btn {
+    margin: 25px auto auto;
+}
+
+@media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }

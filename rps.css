@@ -1,0 +1,41 @@
+
+
+h1 {
+  font-size: 3em;
+  text-decoration: underline;
+  text-align: center;
+  color: whitesmoke;
+}
+
+h2 {
+  text-align: center;
+  text-transform: capitalize;
+  color: whitesmoke;
+}
+
+body {
+    background-color: #435585;
+}
+
+img {
+    height: 400px;
+    width: 400px;
+    object-fit: fill;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.radio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10px;
+  color: whitesmoke;
+}
+
+
+@media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
